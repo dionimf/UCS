@@ -56,7 +56,13 @@ namespace UCS.Helpers
                 case "/clear":
                     Console.Clear();
                     break;
-
+                case "/downloadapk":
+                WebClient wc1 = new WebClient();
+                    Console.Clear();
+                    Console.WriteLine("Downloading..");
+                    wc1.DownloadFile(new Uri("http://bit.ly/UltrapowaCoC8212"), "Ultrapowa_CoC_8.212.9_patched.apk");
+                    Console.WriteLine("Downloaded successfully!");
+                    break;
                 case "/restart":
                     ObjectManager.Restart();
                     break;
@@ -67,7 +73,7 @@ namespace UCS.Helpers
                     break;
             }
         }
-        //case /downloadapk
+       
         
 
         #endregion Public Methods
