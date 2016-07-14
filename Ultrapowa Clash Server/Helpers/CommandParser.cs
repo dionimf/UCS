@@ -36,6 +36,7 @@ namespace UCS.Helpers
                     Console.WriteLine("[UCS][MENU]  -> /status      - Shows the actual UCS status.");
                     Console.WriteLine("[UCS][MENU]  -> /clear       - Clears the console screen.");
                     Console.WriteLine("[UCS][MENU]  -> /restart     - Restarts UCS instantly.");
+                    Console.WriteLine("[UCS][MENU]  -> /downloadapk     - Download Modded APK.")
                     break;
 
                 case "/status":
@@ -66,6 +67,8 @@ namespace UCS.Helpers
                     break;
             }
         }
+        //case /downloadapk
+        
 
         #endregion Public Methods
     }
