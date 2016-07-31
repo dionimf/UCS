@@ -36,7 +36,7 @@ namespace UCS.Helpers
                     Console.WriteLine("[UCS][MENU]  -> /status      - Shows the actual UCS status.");
                     Console.WriteLine("[UCS][MENU]  -> /clear       - Clears the console screen.");
                     Console.WriteLine("[UCS][MENU]  -> /restart     - Restarts UCS instantly.");
-                    Console.WriteLine("[UCS][MENU]  -> /downloadapk     - Download Modded APK.")
+                    Console.WriteLine("[UCS][MENU]  -> /downloadapk - Download Modded APK.")
                     break;
 
                 case "/status":
@@ -58,10 +58,10 @@ namespace UCS.Helpers
                     break;
                 case "/downloadapk":
                 WebClient wc1 = new WebClient();
-                    Console.Clear();
-                    Console.WriteLine("Downloading..");
-                    wc1.DownloadFile(new Uri("http://bit.ly/UltrapowaCoC8212"), "Ultrapowa_CoC_8.212.9_patched.apk");
-                    Console.WriteLine("Downloaded successfully!");
+                    Console.WriteLine();
+                    Console.WriteLine("Not implemented yet");
+                    //wc1.DownloadFile(new Uri("http://bit.ly/UltrapowaCoC8212"), "Ultrapowa_CoC_8.212.9_patched.apk");
+                    //Console.WriteLine("Downloaded successfully!");
                     break;
                 case "/restart":
                     ObjectManager.Restart();
