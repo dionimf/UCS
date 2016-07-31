@@ -3,19 +3,20 @@
 ##### Keep in mind that this is the version written by the official development team containing:
 
 * Ultrapowa									
-* Berkan
-* iSwuerfel (Passive)			
 * ADeltaX								
 * thecheater887	
 
 ##### These persons are helping with the development of UCS.
 
-* Aidid Haiqal 
 * Clugh
 * Creaprog
 * exyjerome
 * Karan Sanjeev
 * PatrikCoC
+
+# Developer needed
+
+Ultrapowa is highly need of developers. If you are willing to join, contact [Ultrapowa Forum](http://ultrapowa.com/forum)
 
 ##### UCS is NOT affiliated with Supercell, or any other company.
 ##### Help and Support: http://bit.ly/UltraPowa
