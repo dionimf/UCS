@@ -311,7 +311,9 @@
     <Compile Include="PacketProcessing\Messages\Server\PreviousGlobalPlayersMessage.cs" />
     <Compile Include="PacketProcessing\Messages\Server\PromoteAllianceMemberOkMessage.cs" />
     <Compile Include="PacketProcessing\Messages\Server\ReplayDataMessage.cs" />
+    <Compile Include="Core\Threading\VersionChecker.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="config.ucs" />
     <Compile Include="Utilities\ZLib\CRC32.cs" />
     <Compile Include="Utilities\ZLib\Deflate.cs" />
     <Compile Include="Utilities\ZLib\DeflateStream.cs" />
