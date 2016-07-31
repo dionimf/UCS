@@ -14,7 +14,6 @@ using System.Configuration;
 using System.Threading;
 using UCS.Core.Network;
 using UCS.Core.Web;
-using static UCS.Core.Debugger;
 
 namespace UCS.Core.Threading
 {
@@ -51,7 +50,7 @@ namespace UCS.Core.Threading
                 new Gateway().Start();
                 new HTTP(Convert.ToInt32(ConfigurationManager.AppSettings["DebugPort"]));
                 //new UCSList();
-                WriteLine("[UCS]    Server started, let's play Clash of Clans!");
+                Console.WriteLine("[UCS]    Server started, let's play Clash of Clans!");
             });
             T.Start();
         }

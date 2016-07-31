@@ -271,6 +271,7 @@
     <Compile Include="Core\Crypto\TweetNaCl\verify_16.cs" />
     <Compile Include="Core\Crypto\TweetNaCl\xsalsa20.cs" />
     <Compile Include="Core\Crypto\TweetNaCl\xsalsa20poly1305.cs" />
+    <Compile Include="Core\Threading\VersionChecker.cs" />
     <Compile Include="Core\Web\HTTP.cs" />
     <Compile Include="Core\Performances.cs" />
     <Compile Include="Logic\Manager\ObstacleManager.cs" />
@@ -311,9 +312,7 @@
     <Compile Include="PacketProcessing\Messages\Server\PreviousGlobalPlayersMessage.cs" />
     <Compile Include="PacketProcessing\Messages\Server\PromoteAllianceMemberOkMessage.cs" />
     <Compile Include="PacketProcessing\Messages\Server\ReplayDataMessage.cs" />
-    <Compile Include="Core\Threading\VersionChecker.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="config.ucs" />
     <Compile Include="Utilities\ZLib\CRC32.cs" />
     <Compile Include="Utilities\ZLib\Deflate.cs" />
     <Compile Include="Utilities\ZLib\DeflateStream.cs" />
@@ -714,8 +713,6 @@
     <Compile Include="Core\ResourcesManager.cs" />
     <Compile Include="Core\Web\UCSList.cs" />
     <Compile Include="Core\DatabaseManager.cs" />
-    <Compile Include="Core\Debugger.cs" />
-    <Compile Include="Core\Logger.cs" />
     <Compile Include="Core\Threading\ConsoleThread.cs" />
     <Compile Include="Core\Threading\MemoryThread.cs" />
     <Compile Include="Core\Threading\NetworkThread.cs" />

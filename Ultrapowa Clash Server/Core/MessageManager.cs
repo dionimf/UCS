@@ -52,17 +52,18 @@ namespace UCS.Core
                                   ")";
                     try
                     {
-                        Debugger.WriteLine("[UCS]    Processing " + p.GetType().Name + player);
+                        //Debugger.WriteLine("[UCS]    Processing " + p.GetType().Name + player);
                         p.Decode();
                         p.Process(pl);
                     }
                     catch (Exception ex)
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Debugger.WriteLine(
-                            "[UCS]    An exception occured during processing of message " + p.GetType().Name + player,
-                            ex);
-                        Console.ResetColor();
+                        //Debugger.WriteLine(
+                        // "[UCS]    An exception occured during processing of message " + p.GetType().Name + player,
+                        // ex);
+                        Console.WriteLine("Error processing message" + p.GetType().Name + player, ex);
+                     Console.ResetColor();
                     }
                 }
             }

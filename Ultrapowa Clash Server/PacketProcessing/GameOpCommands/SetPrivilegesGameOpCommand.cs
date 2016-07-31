@@ -54,17 +54,17 @@ namespace UCS.PacketProcessing.GameOpCommands
                             }
                             else
                             {
-                                Debugger.WriteLine("SetPrivileges failed: id " + id + " not found");
+                                //Debugger.WriteLine("SetPrivileges failed: id " + id + " not found");
                             }
                         }
                         else
                         {
-                            Debugger.WriteLine("SetPrivileges failed: target privileges too high");
+                            //Debugger.WriteLine("SetPrivileges failed: target privileges too high");
                         }
                     }
                     catch (Exception ex)
                     {
-                        Debugger.WriteLine("SetPrivileges failed with error: " + ex);
+                        ////Debugger.WriteLine("SetPrivileges failed with error: " + ex);
                     }
                 }
             }

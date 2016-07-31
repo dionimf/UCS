@@ -55,12 +55,12 @@ namespace UCS.PacketProcessing.GameOpCommands
                         }
                         else
                         {
-                            Debugger.WriteLine("Attack failed: id " + id + " not found");
+                            //Debugger.WriteLine("Attack failed: id " + id + " not found");
                         }
                     }
                     catch (Exception ex)
                     {
-                        Debugger.WriteLine("Attack failed with error: " + ex);
+                        //Debugger.WriteLine("Attack failed with error: " + ex);
                     }
                 }
             }

@@ -105,7 +105,7 @@ namespace UCS.PacketProcessing.Messages.Client
                 }
                 catch (Exception e)
                 {
-                    Debugger.WriteLine("[UCS]    Exception occured when reading packet", e);
+                    //Debugger.WriteLine("[UCS]    Exception occured when reading packet", e);
                     Client.CState = 0;
                 }
             }

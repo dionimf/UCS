@@ -52,13 +52,13 @@ namespace UCS.Core.Network
                 string player = " (0, NoNameYet)";
                 if (pl != null)
                     player = " (" + pl.GetPlayerAvatar().GetId() + ", " + pl.GetPlayerAvatar().GetAvatarName() + ")";
-                Debugger.WriteLine("[UCS]    Processing " + p.GetType().Name + player);
+                //Debugger.WriteLine("[UCS]    Processing " + p.GetType().Name + player);
                 m_vOutgoingPackets.Enqueue(p);
                 m_vOutgoingWaitHandle.Set();
             }
             catch (Exception ex)
             {
-                Debugger.WriteLine("[UCS]    Exception when processing " + p.GetType().Name, ex);
+                //Debugger.WriteLine("[UCS]    Exception when processing " + p.GetType().Name, ex);
             }
         }
 
@@ -89,7 +89,7 @@ namespace UCS.Core.Network
                 {
                     p.GetData();
                     p.Decrypt();
-                    Logger.WriteLine(p, "R");
+                    //Logger.WriteLine(p, "R");
                     MessageManager.ProcessPacket(p);
                 }
             }
@@ -103,7 +103,7 @@ namespace UCS.Core.Network
                 Message p;
                 while (m_vOutgoingPackets.TryDequeue(out p))
                 {
-                    Logger.WriteLine(p, "S");
+                    //Logger.WriteLine(p, "S");
                     try
                     {
                         if (p.Client.Socket != null)
@@ -121,7 +121,7 @@ namespace UCS.Core.Network
                         }
                         catch (Exception ex)
                         {
-                            Debugger.WriteLine("[UCS]    Exception thrown when dropping client : ", ex);
+                            //Debugger.WriteLine("[UCS]    Exception thrown when dropping client : ", ex);
                         }
                     }
                 }
