@@ -59,12 +59,12 @@ namespace UCS.PacketProcessing.GameOpCommands
                         }
                         else
                         {
-                            Debugger.WriteLine("RenameAvatar failed: id " + id + " not found");
+                            //Debugger.WriteLine("RenameAvatar failed: id " + id + " not found");
                         }
                     }
                     catch (Exception ex)
                     {
-                        Debugger.WriteLine("RenameAvatar failed with error: " + ex);
+                        //Debugger.WriteLine("RenameAvatar failed with error: " + ex);
                     }
                 }
             }

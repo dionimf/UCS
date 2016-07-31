@@ -59,13 +59,13 @@ namespace UCS.PacketProcessing.GameOpCommands
                                 //ObjectManager.LoadBannedIPs();
                             }
                             else
-                                Debugger.WriteLine("Ban IP failed: insufficient privileges");
+                                Console.WriteLine("Ban IP failed: insufficient privileges");
                         else
-                            Debugger.WriteLine("Ban IP failed: id " + id + " not found");
+                            Console.WriteLine("Ban IP failed: id " + id + " not found");
                     }
                     catch (Exception ex)
                     {
-                        Debugger.WriteLine("Ban IP failed with error: " + ex);
+                        Console.WriteLine("Ban IP failed with error: " + ex);
                     }
                 else
                     SendCommandFailedMessage(level.GetClient());

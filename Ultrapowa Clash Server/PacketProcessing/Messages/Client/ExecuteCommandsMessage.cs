@@ -68,7 +68,7 @@ namespace UCS.PacketProcessing.Messages.Client
                             var obj = CommandFactory.Read(br);
                             if (obj != null)
                             {
-                                Debugger.WriteLine("\t Processing " + obj.GetType().Name);
+                                //Debugger.WriteLine("\t Processing " + obj.GetType().Name);
                                 ((Command) obj).Execute(level);
                             }
                             else
@@ -78,7 +78,7 @@ namespace UCS.PacketProcessing.Messages.Client
             catch (Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Debugger.WriteLine("Exception occurred during command processing." + ex);
+                //Debugger.WriteLine("Exception occurred during command processing." + ex);
                 Console.ResetColor();
             }
         }

@@ -153,7 +153,7 @@ namespace UCS.Logic.Manager
         {
             while (m_vObstacleClearCount > 0 && m_vNormalTimer.GetRemainingSeconds(m_vLevel.GetTime()) <= 0)
             {
-                Debugger.WriteLine("Start adding new Obstacle", null, 5);
+                //Debugger.WriteLine("Start adding new Obstacle", null, 5);
                 var ob = GetRandomObstacle();
                 var pos = GetFreePlace(ob);
                 if (pos != null)
@@ -167,7 +167,7 @@ namespace UCS.Logic.Manager
                     }
                     else
                         m_vNormalTimer.StartTimer(m_vObstacleRespawnSeconds, m_vLevel.GetTime());
-                    Debugger.WriteLine("Finished adding new Obstacle " + ob.GetName(), null, 5);
+                    //Debugger.WriteLine("Finished adding new Obstacle " + ob.GetName(), null, 5);
                 }
                 else
                 {
@@ -179,14 +179,14 @@ namespace UCS.Logic.Manager
             {
                 if (new Random().Next(0, 4) == 0)
                 {
-                    Debugger.WriteLine("Start adding new Obstacle", null, 5);
+                    //Debugger.WriteLine("Start adding new Obstacle", null, 5);
                     var ob = m_vGemBoxes[new Random().Next(0, m_vGemBoxes.Count)];
                     var pos = GetFreePlace(ob);
                     if (pos != null)
                     {
                         SpawnObstacle(pos, ob);
                         m_vGemBoxTimer.StartTimer(m_vObstacleRespawnSeconds * 2, m_vLevel.GetTime());
-                        Debugger.WriteLine("Finished adding new Obstacle " + ob.GetName(), null, 5);
+                        //Debugger.WriteLine("Finished adding new Obstacle " + ob.GetName(), null, 5);
                     }
                 }
                 else
@@ -272,34 +272,11 @@ namespace UCS.Logic.Manager
                     z++;
                 }
 
-                //Debug Message
-                if (Debugger.GetLogLevel() >= 5)
-                {
-                    var sb = new StringBuilder();
-                    for (var i = 0; i < 46; i++)
-                    {
-                        for (var j = 0; j < 46; j++)
-                        {
-                            if (pos != null)
-                            {
-                                if (j >= pos[0] && j < pos[0] + od.Width && i >= pos[1] && i < pos[1] + od.Height)
-                                    field[j, i] = 2;
-                            }
-                            sb.Append(field[j, i]);
-                            sb.Append(" ");
-                        }
-                        sb.Append("\n");
-                    }
-                    Debugger.WriteLine(sb.ToString(), null, 5);
-                }
-
-                //Debug Message END
-
-                return pos;
+               return pos;
             }
             catch (Exception e)
             {
-                Debugger.WriteLine("An Exception occured during GetFreePlace", e, 0);
+                //Debugger.WriteLine("An Exception occured during GetFreePlace", e, 0);
                 return null;
             }
         }

@@ -51,12 +51,12 @@ namespace UCS.PacketProcessing.GameOpCommands
                         }
                         else
                         {
-                            Debugger.WriteLine("Unban failed: id " + id + " not found");
+                            ////Debugger.WriteLine("Unban failed: id " + id + " not found");
                         }
                     }
                     catch (Exception ex)
                     {
-                        Debugger.WriteLine("Unban failed with error: " + ex);
+                        ////Debugger.WriteLine("Unban failed with error: " + ex);
                     }
                 }
             }

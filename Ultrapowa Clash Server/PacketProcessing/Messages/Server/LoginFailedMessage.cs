@@ -13,7 +13,7 @@ using Ionic.Zlib;
 using System.Collections.Generic;
 using System.Configuration;
 using UCS.Helpers;
-using static UCS.Core.Debugger;
+//using static UCS.Core.Debugger;
 
 namespace UCS.PacketProcessing.Messages.Server
 {

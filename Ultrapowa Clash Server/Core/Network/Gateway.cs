@@ -65,13 +65,13 @@ namespace UCS.Core.Network
             }
             catch (Exception ex)
             {
-                Debugger.WriteLine("[UCS]    Exception thrown when processing incoming packet : ", ex);
+                //Debugger.WriteLine("[UCS]    Exception thrown when processing incoming packet : ", ex);
             }
         }
 
         static void OnReceiveError(SocketRead read, Exception exception)
         {
-            Debugger.WriteLine("[UCS]    The client '" + ((IPEndPoint) read.Socket.RemoteEndPoint).Address + "' throw an exception", exception);
+            //Debugger.WriteLine("[UCS]    The client '" + ((IPEndPoint) read.Socket.RemoteEndPoint).Address + "' throw an exception", exception);
         }
 
         void OnClientConnect(IAsyncResult ar)
@@ -87,7 +87,7 @@ namespace UCS.Core.Network
             }
             catch (Exception e)
             {
-                Debugger.WriteLine("[UCS]    Exception when accepting incoming connection", e);
+                //Debugger.WriteLine("[UCS]    Exception when accepting incoming connection", e);
             }
         }
     }

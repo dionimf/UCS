@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Program : Ultrapowa Clash Server
  * Description : A C# Writted 'Clash of Clans' Server Emulator !
  *
@@ -66,7 +66,7 @@ namespace UCS.Core.Threading
                 WriteLine("[UCS]    -> UCS is now starting...");
                 WriteLine("");
                 VersionChecker.VersionMain();
-                Debugger.SetLogLevel(int.Parse(AppSettings["loggingLevel"]));
+                //Debugger.SetLogLevel(int.Parse(AppSettings["loggingLevel"]));
                 MemoryThread.Start();
                 NetworkThread.Start();
                 while ((Command = ReadLine()) != null)

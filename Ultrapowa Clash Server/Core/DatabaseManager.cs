@@ -1,14 +1,3 @@
-/*
- * Program : Ultrapowa Clash Server
- * Description : A C# Writted 'Clash of Clans' Server Emulator !
- *
- * Authors:  Jean-Baptiste Martin <Ultrapowa at Ultrapowa.com>,
- *           And the Official Ultrapowa Developement Team
- *
- * Copyright (c) 2016  UltraPowa
- * All Rights Reserved.
- */
-
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -82,7 +71,7 @@ namespace UCS.Core
             }
             catch (Exception ex)
             {
-                Debugger.WriteLine("[UCS]    An exception occured during CreateAccount processing :", ex);
+                //Debugger.WriteLine("[UCS]    An exception occured during CreateAccount processing :", ex);
             }
         }
 
@@ -109,7 +98,7 @@ namespace UCS.Core
             }
             catch (Exception ex)
             {
-                Debugger.WriteLine("[UCS]    An exception occured during CreateAlliance processing :", ex);
+                //Debugger.WriteLine("[UCS]    An exception occured during CreateAlliance processing :", ex);
             }
         }
 
@@ -141,7 +130,7 @@ namespace UCS.Core
             }
             catch (Exception ex)
             {
-                Debugger.WriteLine("[UCS]    An exception occured during GetAccount processing :", ex);
+                //Debugger.WriteLine("[UCS]    An exception occured during GetAccount processing :", ex);
             }
             return account;
         }
@@ -169,12 +158,12 @@ namespace UCS.Core
                         if (count++ >= 500)
                             break;
                     }
-                    Debugger.WriteLine("[UCS]    The server loaded " + count + " alliances");
+                    //Debugger.WriteLine("[UCS]    The server loaded " + count + " alliances");
                 }
             }
             catch (Exception ex)
             {
-                Debugger.WriteLine("[UCS]    An exception occured during GetAlliance processing:", ex);
+                //Debugger.WriteLine("[UCS]    An exception occured during GetAlliance processing:", ex);
             }
             return alliances;
         }
@@ -195,12 +184,12 @@ namespace UCS.Core
                         if (count++ >= 500)
                             break;
                     }
-                    Debugger.WriteLine("[UCS]    The server loaded " + count + " players");
+                    //Debugger.WriteLine("[UCS]    The server loaded " + count + " players");
                 }
             }
             catch (Exception ex)
             {
-                Debugger.WriteLine("[UCS]    An exception occured during GetPlayers processing:", ex);
+                //Debugger.WriteLine("[UCS]    An exception occured during GetPlayers processing:", ex);
             }
             return players;
         }
@@ -227,7 +216,7 @@ namespace UCS.Core
             }
             catch (Exception ex)
             {
-                Debugger.WriteLine("[UCS]    An exception occured during GetAlliance processing :", ex);
+                //Debugger.WriteLine("[UCS]    An exception occured during GetAlliance processing :", ex);
             }
             return alliance;
         }
@@ -394,11 +383,11 @@ namespace UCS.Core
                     }
                      context.SaveChanges();
                 }
-                Debugger.WriteLine("[UCS]    All players in memory has been saved to database at " + DateTime.Now);
+                //Debugger.WriteLine("[UCS]    All players in memory has been saved to database at " + DateTime.Now);
             }
             catch (Exception ex)
             {
-                Debugger.WriteLine("[UCS]    An exception occured during Save processing for avatars :", ex);
+                //Debugger.WriteLine("[UCS]    An exception occured during Save processing for avatars :", ex);
             }
         }
 
@@ -447,11 +436,11 @@ namespace UCS.Core
                     }
                     context.SaveChanges();
                 }
-                Debugger.WriteLine("[UCS]    All alliances in memory has been saved to database at " + DateTime.Now);
+                //Debugger.WriteLine("[UCS]    All alliances in memory has been saved to database at " + DateTime.Now);
             }
             catch (Exception ex)
             {
-                Debugger.WriteLine("[UCS]    An exception occured during Save processing for alliances :", ex);
+                //Debugger.WriteLine("[UCS]    An exception occured during Save processing for alliances :", ex);
             }
         }
 

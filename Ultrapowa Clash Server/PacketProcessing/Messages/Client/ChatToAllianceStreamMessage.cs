@@ -60,7 +60,7 @@ namespace UCS.PacketProcessing.Messages.Client
                         if (level != null)
                             player += " (" + level.GetPlayerAvatar().GetId() + ", " +
                                       level.GetPlayerAvatar().GetAvatarName() + ")";
-                        Debugger.WriteLine("\t" + obj.GetType().Name + player);
+                        //Debugger.WriteLine("\t" + obj.GetType().Name + player);
                         ((GameOpCommand) obj).Execute(level);
                     }
                 }
